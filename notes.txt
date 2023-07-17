@@ -14,7 +14,6 @@ Cách sử dụng position và transition
       <a href="#">home</a>
 </li>
 
-
 Với Position
 relative
 after:absolute 
@@ -29,5 +28,11 @@ hover:after:w-full
 after:transition-all 
 after:ease-in-out 
 after:duration-300
+
+Ta hoàn toàn có thể viết inline css ngay bên trong file index.html luôn 
+(Nếu như nó chỉ áp dụng ở đúng file index đó không sử dụng ở bất cứ đâu khác nữa thì nên viết inline css luôn)
+VD: h-[530px]
+
+bg-[url('./images/mttt.jpg')]: Với những background sử dụng được ở nhiều nơi ta nên định nghĩa vào tailwind.config.js
 
 

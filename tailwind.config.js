@@ -8,6 +8,13 @@ module.exports = {
       // Nơi ta định nghĩa thêm các mã màu khác
       colors: {
         'light-coffee': '#C89F94'
+      },
+      // Nơi ta định nghĩa background
+      // ta thêm ct (custom) để biết đây là class ta tự định nghĩa
+      backgroundImage: {
+        // Dù file tailwind.config.js đứng ngoài cùng thì lẻ ra ta phải truy cập vào folder public rùi mới đến images nhưng 
+        // do cái ảnh này được gọi từ file index.html trong folder public nên nó là đồng cấp ngang hàng 
+        'ct-slider-background': 'url("./images/blackpink.jpg")'
       }
     },
   },
