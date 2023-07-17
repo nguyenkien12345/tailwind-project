@@ -1,0 +1,7 @@
+1) npm init -y (Cài dự án)
+2) npm install -D tailwindcss (Cài thư viện tailwindcss ở chế độ devDependencies)
+3) npx tailwindcss init (Khởi tạo file tailwind.config.js)
+   npx tailwindcss init --full (Khởi tạo file tailwind.config.js (Có 1 cấu trúc của thằng tailwind sẵn (tham khảo))) => Nên đổi tên là tailwind.config-full.js 
+4) npx tailwindcss -i ./src/input.css -o ./public/output.css --watch (Thay vì gõ tay nên viết 1 câu script thực thi lệnh chạy này vào trong file package.json)
+(Nó sẽ hiển thị tất cả các class mà tailwind đã build ra trong file đầu ra public/output.css. Import file này vào html)
+5) npm install -D live-server (Cài thư viện live-server ở chế độ devDependencies) (Thêm 1 câu script thực thi lệnh chạy này vào trong file package.json)
