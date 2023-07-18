@@ -16,6 +16,17 @@ module.exports = {
           600: '#744838',
         }
       },
+      // Nơi ta định nghĩa các keyFrames của animation
+      keyframes: {
+        fadeIn: {
+          from: { opacity: 0, visibility: 'hidden' },
+          to: { opacity: 1, visibility: 'visible' }
+        }
+      },
+      // Nơi ta định nghĩa các animation
+      animation: {
+        fadeIn: 'fadeIn .5s ease-in-out'
+      },
       // Nơi ta định nghĩa background
       // ta thêm ct (custom) để biết đây là class ta tự định nghĩa
       backgroundImage: {
