@@ -1,14 +1,14 @@
 Vào firebase.google.com 
 Add Project => Đặt tên project => Continue => Continue => Default Account for Firebase => Create project
-Vào Hosting => Get started
+Vào Build => Hosting => Get started
 Trên máy tính
 - npm install -g firebase-tools (Kiểm tra version:  firebase --version)
 - firebase login
-- firebase init (Chọn thằng: Hosting: Configure files for Firebase Hosting and ..... Action deploys) => Nhấn phím space để chọn
-- Use an existing project
+- firebase init (Chọn thằng: Hosting: Configure files for Firebase Hosting and ..... Action deploys) => Nhấn phím space để chọn => Sau đó enter
+- Chọn Use an existing project
 - Chọn project để deploys
 - Ở câu What do you want to use ..... directory? (Ta sẽ để là public (Vì đây chính là folder chứa đoạn code show html css của chúng ta))
 - Ở câu Configure as a single-app app ..... ? (Chọn No)
-- Ở câu Set up automatic builds and deploys with Githubs? (Chọn Yes)
+- Ở câu Set up automatic builds and deploys with Githubs? (Chọn No)
 - Lưu ý: Ở câu File public/index.html already exists. Overwrites? (Chọn No)
 - firebase deploy
