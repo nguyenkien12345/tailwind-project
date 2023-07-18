@@ -35,4 +35,14 @@ VD: h-[530px]
 
 bg-[url('./images/mttt.jpg')]: Với những background sử dụng được ở nhiều nơi ta nên định nghĩa vào tailwind.config.js
 
+Cách viết số âm 
+after:-bottom-2 
+after:-left-2
+
+Responsive 
+px-8 sm:px-16 md:px-32 lg:px-64 xl:px-96
+Đối với màn hình sm:640px thì áp dụng px-16
+Đối với màn hình md:768px thì áp dụng px-32
+Đối với màn hình lg:1024px thì áp dụng px-64
+Đối với màn hình xl:1280px thì áp dụng px-96
 
