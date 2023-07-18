@@ -48,8 +48,24 @@
             </header>
 
             <main>
-                <div class="slider"> <!-- Start slider -->
-
+                <!-- h-[530px]: Chính là inline-css luôn -->
+                <!-- bg-[url('./images/mttt.jpg')]: Với những background sử dụng được ở nhiều nơi ta nên định nghĩa vào tailwind.config.js -->
+                <div class="slider h-[530px] bg-ct-slider-background bg-cover bg-no-repeat bg-top"> <!-- Start slider -->
+                    <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-30"> <!-- Lớp phủ overlay -->
+                        <div class="mx-16 text-center text-white">
+                            <p class="uppercase mb-6">best place to buy coffee</p>
+                            <p class="uppercase font-medium text-5xl mb-6">coffee mugs</p>
+                            <p class="font-medium text-lg mb-8">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</p>
+                            <div class="flex justify-center items-center">
+                                <!-- tracking-wider chính là letter spacing -->
+                                <button class="uppercase bg-white text-gray-900 w-max tracking-wider py-4 px-8 text-sm font-semibold rounded-lg cursor-pointer hover:bg-opacity-95 hover:text-green-500
+                                transition duration-300 ease-in-out
+                                ">
+                                    explore our products
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>  <!-- End slider -->
 
                 <div class="story"> <!-- Start story -->
