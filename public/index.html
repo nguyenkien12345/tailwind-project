@@ -11,7 +11,7 @@
 <body>
     <div class="root"> <!-- Start root -->
         
-        <div class="content-wrapper text-base mx-auto px-8 bg-slate-400 max-w-screen-2xl"> <!-- Start content wrapper -->
+        <div class="content-wrapper text-base mx-auto px-8 max-w-screen-2xl"> <!-- Start content wrapper -->
 
             <header class="py-6 mx-10">
                 <nav class="flex flex-row justify-between items-center">
@@ -58,9 +58,7 @@
                             <div class="font-medium text-lg mb-8">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</div>
                             <div class="flex justify-center items-center">
                                 <!-- tracking-wider chính là letter spacing -->
-                                <button class="uppercase bg-white text-gray-900 w-max tracking-wider py-4 px-8 text-sm font-semibold rounded-lg cursor-pointer hover:bg-opacity-95 hover:text-green-500
-                                transition duration-300 ease-in-out
-                                ">
+                                <button class="w-max ct-custom-button">
                                     explore our products
                                 </button>
                             </div>
@@ -68,21 +66,19 @@
                     </div>
                 </div>  <!-- End slider -->
 
-                <div class="story"> <!-- Start story -->
-                    <div class="w-full h-full flex justify-center items-center">
-                        <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
-                            <div class="text-3xl leading-10 mb-6 tracking-wide">What is your most special coffee?</div>
-                            <div class="text-gray-500 leading-7 mb-6">The French Press is a brewing method that comes closest to cupping. Cupping is the prescribed method by which coffee should be judged. Nothing separates the water from the coffee. 
-                                To properly discover the flavours, it is best to drink the coffee this way. Everyone has their favourite brewing method.
-                            </div>
-                            <div>
-                                <!--  -->
-                                <a href="#" class="text-coffee-400 hover:text-coffee-600 
-                                relative after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:bg-coffee-50 hover:after:bg-coffee-200
-                                after:transition-all after:ease-in-out after:duration-400">
-                                    Read the full Story
-                                </a>
-                            </div>
+                <div class="story flex justify-center items-center"> <!-- Start story -->
+                    <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
+                        <div class="text-3xl leading-10 mb-6 tracking-wide">What is your most special coffee?</div>
+                        <div class="text-gray-500 leading-7 mb-6">The French Press is a brewing method that comes closest to cupping. Cupping is the prescribed method by which coffee should be judged. Nothing separates the water from the coffee. 
+                            To properly discover the flavours, it is best to drink the coffee this way. Everyone has their favourite brewing method.
+                        </div>
+                        <div>
+                            <!--  -->
+                            <a href="#" class="text-coffee-400 hover:text-coffee-600 
+                            relative after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:bg-coffee-50 hover:after:bg-coffee-200
+                            after:transition-all after:ease-in-out after:duration-400">
+                                Read the full Story
+                            </a>
                         </div>
                     </div>
                 </div>  <!-- End story -->
@@ -92,8 +88,57 @@
                     <div class="ct-subheadline-label">FEATURED MUGS</div>
                     <div class="ct-subheadline-deco-line"></div>
                 </div>
-                <div class="feature-mugs"> <!-- Start feature-mugs -->
+                <!-- Với màn hình bình thường thì width sẽ là  95% nhưng với màn hình lg thì width sẽ là 65% -->
+                <div class="feature-mugs w-[95%] lg:w-[65%] mx-auto mb-24"> <!-- Start feature-mugs -->
+                    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-4">
+                        <div class="ct-product-card">
+                            <div class="h-[400px] sm:h-[540px] bg-[url('./images/coffee1.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#">
+                                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                        <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
+                                        <div class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                            On Sales.
+                                        </div>
+                                        <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
+                                        <div class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ct-product-info text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                                </a>
+                                <span class="text-lg text-coffee-400">$50.00</span>
+                                <span class="ml-2 text-gray-400 line-through">$100.00</span>
+                            </div>
+                        </div>
 
+                        <div class="ct-product-card">
+                            <div class="h-[400px] sm:h-[540px] bg-[url('./images/coffee2.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#">
+                                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                        <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
+                                        <div class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                            On Sales.
+                                        </div>
+                                        <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
+                                        <div class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ct-product-info text-center mt-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                                </a>
+                                <span class="text-lg text-coffee-400">$50.00</span>
+                                <span class="ml-2 text-gray-400 line-through">$100.00</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>  <!-- End feature-mugs -->
 
                 <div class="ct-subheadline">
