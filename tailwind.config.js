@@ -7,7 +7,14 @@ module.exports = {
     extend: {
       // Nơi ta định nghĩa thêm các mã màu khác
       colors: {
-        'light-coffee': '#C89F94'
+        // 'light-coffee': '#C89F94'
+        // Ta sẽ dùng theo kiểu coffee-50, coffee-200, coffee-300, ...
+        'coffee': {
+          50: '#E8D6D0',
+          200: '#C89F94',
+          400: '#A25F4B',
+          600: '#744838',
+        }
       },
       // Nơi ta định nghĩa background
       // ta thêm ct (custom) để biết đây là class ta tự định nghĩa

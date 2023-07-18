@@ -6,7 +6,7 @@
 /* Để tránh bị đụng class với tailwindcss thì ta nên thêm 1 tiền tố (prefix) do ta tự định nghĩa vào trước (vd: ct (custom)) */
 .ct-top-menu-item {
   @apply cursor-pointer py-1 hover:text-gray-800 relative 
-  after:absolute after:bottom-0 after:left-0 after:bg-light-coffee after:h-0.5 after:w-0 hover:after:w-full 
+  after:absolute after:bottom-0 after:left-0 after:bg-coffee-200 after:h-0.5 after:w-0 hover:after:w-full 
   after:transition-all after:ease-in-out after:duration-300;
 }
 
@@ -16,4 +16,16 @@
 
 .ct-badge-circle {
   @apply text-xs text-center rounded-full px-1.5 py-1;
+}
+
+.ct-subheadline {
+  @apply flex flex-row justify-center items-center mb-24;
+}
+
+.ct-subheadline-deco-line {
+  @apply w-8 h-px bg-gray-200;
+}
+
+.ct-subheadline-label {
+  @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[12px] text-center;
 }
