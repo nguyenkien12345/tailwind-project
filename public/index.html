@@ -10,19 +10,21 @@
 
 <body>
     <div class="root"> <!-- Start root -->
-        
+
         <div class="content-wrapper text-base mx-auto px-8 max-w-screen-2xl"> <!-- Start content wrapper -->
 
             <header class="py-6 mx-10">
                 <nav class="flex flex-row justify-between items-center">
                     <!-- Giả sử ta chia nguyên cái nav này làm 6 phần (Các thằng con cộng lại phải ra 6) -->
                     <!-- basis-1/6 (Cái logo này sẽ chiếm 1 phần) -->
-                    <div class="logo basis-1/6 text-left capitalize text-xl font-semibold text-red-700 cursor-pointer hover:text-red-900">
-                        <span>NTKVSMTTT</span>
+                    <div
+                        class="logo basis-1/6 text-left text-xl font-semibold text-red-700 cursor-pointer hover:text-red-900">
+                        NTKVSMTTT
                     </div>
 
                     <!-- basis-4/6 (Cái ul menu này sẽ chiếm 4 phần) -->
-                    <ul class="basis-4/6 flex flex-row justify-end items-center gap-8 uppercase text-sm text-gray-500 font-medium"> 
+                    <ul
+                        class="basis-4/6 flex flex-row justify-end items-center gap-8 uppercase text-sm text-gray-500 font-medium">
                         <!-- Ta sẽ định nghĩa class="top-menu-item" trong public/input.css để có thể tái sử dụng (dùng chung) -->
                         <li class="ct-top-menu-item"><a href="#">home</a></li>
                         <li class="ct-top-menu-item"><a href="#">products</a></li>
@@ -33,12 +35,16 @@
                     </ul>
 
                     <!-- basis-1/6 (Cái ul cart này sẽ chiếm 1 phần) -->
-                    <ul class="basis-1/6 flex flex-row justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+                    <ul
+                        class="basis-1/6 flex flex-row justify-start items-center ml-16 uppercase text-sm text-gray-500 font-medium">
                         <li class="ct-top-menu-item">
                             <a href="#" class="flex flex-row items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ct-icon">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                                  </svg>
+                                <!-- Lấy icon từ https://heroicons.com/ -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="ct-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg>
                                 <span class="mx-2">Cart</span>
                                 <span class="ct-badge-circle bg-orange-200 text-white">10</span>
                             </a>
@@ -50,30 +56,31 @@
             <main>
                 <!-- h-[530px]: Chính là inline-css luôn -->
                 <!-- bg-[url('./images/mttt.jpg')]: Với những background sử dụng được ở nhiều nơi ta nên định nghĩa vào tailwind.config.js -->
-                <div class="slider h-[530px] bg-ct-slider-background bg-cover bg-no-repeat bg-top"> <!-- Start slider -->
-                    <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-30"> <!-- Lớp phủ overlay -->
+                <div class="slider h-[530px] bg-ct-slider-background bg-cover bg-no-repeat bg-top">
+                    <!-- Start slider -->
+                    <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40">
+                        <!-- Lớp phủ overlay -->
                         <div class="mx-16 text-center text-white">
                             <div class="uppercase mb-6">best place to buy coffee</div>
                             <div class="uppercase font-medium text-5xl mb-6">coffee mugs</div>
-                            <div class="font-medium text-lg mb-8">The most versatile furniture system ever created. Designed to fit your life, made to move and grow.</div>
-                            <div class="flex justify-center items-center">
-                                <!-- tracking-wider chính là letter spacing -->
-                                <button class="w-max ct-custom-button">
-                                    explore our products
-                                </button>
-                            </div>
+                            <div class="font-medium text-lg mb-8">The most versatile furniture system ever created.
+                                Designed to fit your life, made to move and grow.</div>
+                            <!-- tracking-wider chính là letter spacing -->
+                            <button class="w-max ct-custom-button">explore our products</button>
                         </div>
                     </div>
-                </div>  <!-- End slider -->
+                </div> <!-- End slider -->
 
                 <div class="story flex justify-center items-center"> <!-- Start story -->
                     <div class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center">
                         <div class="text-3xl leading-10 mb-6 tracking-wide">What is your most special coffee?</div>
-                        <div class="text-gray-500 leading-7 mb-6">The French Press is a brewing method that comes closest to cupping. Cupping is the prescribed method by which coffee should be judged. Nothing separates the water from the coffee. 
-                            To properly discover the flavours, it is best to drink the coffee this way. Everyone has their favourite brewing method.
+                        <div class="text-gray-500 leading-7 mb-6">The French Press is a brewing method that comes
+                            closest to cupping. Cupping is the prescribed method by which coffee should be judged.
+                            Nothing separates the water from the coffee.
+                            To properly discover the flavours, it is best to drink the coffee this way. Everyone has
+                            their favourite brewing method.
                         </div>
                         <div>
-                            <!--  -->
                             <a href="#" class="text-coffee-400 hover:text-coffee-600 
                             relative after:absolute after:-bottom-2 after:left-0 after:h-0.5 after:w-full after:bg-coffee-50 hover:after:bg-coffee-200
                             after:transition-all after:ease-in-out after:duration-400">
@@ -81,7 +88,7 @@
                             </a>
                         </div>
                     </div>
-                </div>  <!-- End story -->
+                </div> <!-- End story -->
 
                 <div class="ct-subheadline">
                     <div class="ct-subheadline-deco-line"></div>
@@ -92,15 +99,19 @@
                 <div class="feature-mugs w-[95%] lg:w-[65%] mx-auto mb-24"> <!-- Start feature-mugs -->
                     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-4">
                         <div class="ct-product-card">
-                            <div class="h-[400px] sm:h-[540px] bg-[url('./images/coffee1.jpg')] bg-cover bg-no-repeat bg-center">
+                            <div
+                                class="h-[400px] sm:h-[540px] bg-[url('./images/coffee1.jpg')] bg-cover bg-no-repeat bg-center">
                                 <a href="#">
-                                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
                                         <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
-                                        <div class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                        <div
+                                            class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
                                             On Sales.
                                         </div>
                                         <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
-                                        <div class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                        <div
+                                            class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
                                             Explore Mug
                                         </div>
                                     </div>
@@ -116,15 +127,19 @@
                         </div>
 
                         <div class="ct-product-card">
-                            <div class="h-[400px] sm:h-[540px] bg-[url('./images/coffee2.jpg')] bg-cover bg-no-repeat bg-center">
+                            <div
+                                class="h-[400px] sm:h-[540px] bg-[url('./images/coffee2.jpg')] bg-cover bg-no-repeat bg-center">
                                 <a href="#">
-                                    <div class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
                                         <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
-                                        <div class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                        <div
+                                            class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
                                             On Sales.
                                         </div>
                                         <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
-                                        <div class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                        <div
+                                            class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
                                             Explore Mug
                                         </div>
                                     </div>
@@ -139,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  <!-- End feature-mugs -->
+                </div> <!-- End feature-mugs -->
 
                 <div class="ct-subheadline">
                     <div class="ct-subheadline-deco-line"></div>
@@ -147,9 +162,166 @@
                         MORE PRODUCTS</div>
                     <div class="ct-subheadline-deco-line"></div>
                 </div>
-                <div class="more-products"> <!-- Start more-products -->
-
-                </div>  <!-- End more-products -->
+                <div class="more-products w-[95%] lg:w-[65%] mx-auto mb-16"> <!-- Start more-products -->
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 md:gap-4">
+                        <div class="ct-product-card">
+                            <div class="h-[380px] bg-[url('./images/coffee3.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                        <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
+                                        <div
+                                            class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                            On Sales.
+                                        </div>
+                                        <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
+                                        <div
+                                            class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ct-product-info text-center my-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                                </a>
+                                <span class="text-lg text-coffee-400">$50.00</span>
+                                <span class="ml-2 text-gray-400 line-through">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="ct-product-card">
+                            <div class="h-[380px] bg-[url('./images/coffee4.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                        <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
+                                        <div
+                                            class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                            On Sales.
+                                        </div>
+                                        <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
+                                        <div
+                                            class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ct-product-info text-center my-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                                </a>
+                                <span class="text-lg text-coffee-400">$50.00</span>
+                                <span class="ml-2 text-gray-400 line-through">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="ct-product-card">
+                            <div class="h-[380px] bg-[url('./images/coffee5.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                        <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
+                                        <div
+                                            class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                            On Sales.
+                                        </div>
+                                        <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
+                                        <div
+                                            class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ct-product-info text-center my-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                                </a>
+                                <span class="text-lg text-coffee-400">$50.00</span>
+                                <span class="ml-2 text-gray-400 line-through">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="ct-product-card">
+                            <div class="h-[380px] bg-[url('./images/coffee6.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                        <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
+                                        <div
+                                            class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                            On Sales.
+                                        </div>
+                                        <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
+                                        <div
+                                            class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ct-product-info text-center my-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                                </a>
+                                <span class="text-lg text-coffee-400">$50.00</span>
+                                <span class="ml-2 text-gray-400 line-through">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="ct-product-card">
+                            <div class="h-[380px] bg-[url('./images/coffee7.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                        <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
+                                        <div
+                                            class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                            On Sales.
+                                        </div>
+                                        <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
+                                        <div
+                                            class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ct-product-info text-center my-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                                </a>
+                                <span class="text-lg text-coffee-400">$50.00</span>
+                                <span class="ml-2 text-gray-400 line-through">$100.00</span>
+                            </div>
+                        </div>
+                        <div class="ct-product-card">
+                            <div class="h-[380px] bg-[url('./images/coffee8.jpg')] bg-cover bg-no-repeat bg-center">
+                                <a href="#">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:transition-all hover:ease-in-out hover:duration-400 relative group">
+                                        <!-- Ban đầu thẻ này sẽ bị ẩn đi với hidden (Thẻ cha phải có thuộc tính group thì thẻ con dùng group mới ăn được) chỉ hiện thị khi ta dùng group-hover:block và thêm hiệu ứng animation với group-hover:animate-fadeIn -->
+                                        <div
+                                            class="absolute w-[100px] py-2 px-4 top-3 right-3 bg-white text-coffee-400 text-center font-semibold hidden group-hover:block group-hover:animate-fadeIn rounded-lg">
+                                            On Sales.
+                                        </div>
+                                        <!-- Canh giữa phần tử left-1/2 -translate-x-1/2 (left-1/2: Cách left 50%) -->
+                                        <div
+                                            class="absolute w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn ct-custom-button">
+                                            Explore Mug
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="ct-product-info text-center my-8">
+                                <a href="#">
+                                    <div class="text-xl mb-3 hover:text-coffee-400">Pink Premium Ceramic</div>
+                                </a>
+                                <span class="text-lg text-coffee-400">$50.00</span>
+                                <span class="ml-2 text-gray-400 line-through">$100.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End more-products -->
 
                 <div class="ct-subheadline">
                     <div class="ct-subheadline-deco-line"></div>
@@ -159,7 +331,7 @@
                 </div>
                 <div class="mugs-magazine"> <!-- Start mugs-magazine -->
 
-                </div>  <!-- End mugs-magazine -->
+                </div> <!-- End mugs-magazine -->
 
                 <div class="ct-subheadline">
                     <div class="ct-subheadline-deco-line"></div>
@@ -169,11 +341,11 @@
                 </div>
                 <div class="lifestyle-stories"> <!-- Start lifestyle-stories -->
 
-                </div>  <!-- End lifestyle-stories -->
+                </div> <!-- End lifestyle-stories -->
 
                 <div class="subcrice-us"> <!-- Start subcrice-us -->
 
-                </div>  <!-- End subcrice-us -->
+                </div> <!-- End subcrice-us -->
             </main>
 
             <footer>

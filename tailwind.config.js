@@ -8,7 +8,6 @@ module.exports = {
       // Nơi ta định nghĩa thêm các mã màu khác
       colors: {
         // 'light-coffee': '#C89F94'
-        // Ta sẽ dùng theo kiểu coffee-50, coffee-200, coffee-300, ...
         'coffee': {
           50: '#E8D6D0',
           200: '#C89F94',
@@ -28,10 +27,9 @@ module.exports = {
         fadeIn: 'fadeIn .5s ease-in-out'
       },
       // Nơi ta định nghĩa background
-      // ta thêm ct (custom) để biết đây là class ta tự định nghĩa
       backgroundImage: {
         // Dù file tailwind.config.js đứng ngoài cùng thì lẻ ra ta phải truy cập vào folder public rùi mới đến images nhưng 
-        // do cái ảnh này được gọi từ file index.html trong folder public nên nó là đồng cấp ngang hàng 
+        // do cái ảnh này được gọi từ file index.html trong folder public nên nó là đồng cấp ngang hàng vì vậy ta có thể gọi trực tiếp từ images luôn 
         'ct-slider-background': 'url("./images/blackpink.jpg")'
       }
     },

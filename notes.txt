@@ -7,7 +7,7 @@
 5) npm install -D live-server (Cài thư viện live-server ở chế độ devDependencies) (Thêm 1 câu script thực thi lệnh chạy này vào trong file package.json)
 
 Cách sử dụng hover
-hover:text-gray-500 => Khi hover vào nó sẽ thay đổi color của text
+hover:text-gray-500
 
 Cách sử dụng position và transition 
 <li class="relative after:absolute after:bottom-0 after:left-0 after:bg-slate-900 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300">
@@ -45,4 +45,4 @@ px-8 sm:px-16 md:px-32 lg:px-64 xl:px-96
 Đối với màn hình md:768px thì áp dụng px-32
 Đối với màn hình lg:1024px thì áp dụng px-64
 Đối với màn hình xl:1280px thì áp dụng px-96
-
+Ngược lại tất cả thì áp dụng px-8
